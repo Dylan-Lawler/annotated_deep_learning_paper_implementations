@@ -109,7 +109,7 @@ class ReplayBuffer:
             'action': np.zeros(shape=capacity, dtype=np.int32),
             'reward': np.zeros(shape=capacity, dtype=np.float32),
             'next_obs': np.zeros(shape=(capacity, 4, 84, 84), dtype=np.uint8),
-            'done': np.zeros(shape=capacity, dtype= bool_)
+            'done': np.zeros(shape=capacity, dtype= np.bool_)
         }
         # We use cyclic buffers to store data, and `next_idx` keeps the index of the next empty
         # slot
